@@ -21,6 +21,10 @@ const clickEvent = () => {
     return;
   }
 
+  $('p').focusout(function (e) {
+    alert('Done key Pressed!!!!');
+  });
+
   btnContaienr.style.background = 'transparent';
   $(btnContaienr).addClass('blink');
   document
