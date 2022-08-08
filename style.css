@@ -10,6 +10,45 @@ body {
   text-align: right;
   direction: rtl;
 }
+.button-container {
+}
+
+.ql-editor {
+  padding: 0 !important;
+}
+
+.blink2 {
+  animation: blink2 2s infinite;
+}
+
+.blink {
+  animation: blinker 1.4s linear infinite;
+  height: 40px;
+  border-bottom: 1px solid #b9d6fa;
+}
+
+p {
+  border-bottom: 0.2rem solid #b9d9eb;
+  padding-bottom: 2px;
+  padding-left: 13px !important;
+  padding-right: 5px;
+}
+#arrow {
+  position: absolute;
+  font-size: 3rem;
+  top: 0.8rem;
+  left: 3rem;
+  color: crimson;
+  opacity: 0;
+}
+
+#v-icon {
+  font-size: 10em;
+  color: Green;
+  text-shadow: -1px 14px rgb(62, 62, 62);
+
+  display: none;
+}
 
 @keyframes blink2 {
   0% {

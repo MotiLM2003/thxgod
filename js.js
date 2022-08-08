@@ -2,9 +2,13 @@ let quill = null;
 $(document).ready(function () {
   quill = new Quill('#editor', { placeholder: '' });
   quill.focus();
+  for (var i = 0; i < 100; i++) {
+    $('.ql-editor').append('<p></p>');
+    console.log(' here');
+  }
   // $('.ql-editor p').text('a').focus();
 });
-
+s;
 const clickEvent = () => {
   let hasLetters = false;
 
@@ -48,9 +52,9 @@ const btnContaienr = document.getElementById('button-container');
 const icon = document.getElementById('v-icon');
 let list = document.querySelectorAll('.child');
 $(icon).fadeOut(0);
-// document
-//   .getElementById('button-container')
-//   .addEventListener('click', clickEvent);
+document
+  .getElementById('button-container')
+  .addEventListener('click', clickEvent);
 
 // getInputs();
 
@@ -62,12 +66,10 @@ jQuery.extend(jQuery.expr[':'], {
 });
 
 function contains_heb(str) {
-  console.log('here');
   return /[\u0590-\u05FF]/.test(str);
 }
 
 $(document).on('keyup', function (e) {
-  console.log('here');
   $('.ql-editor p').each(function () {
     var me = $(this);
     const isHeb = contains_heb(me.text());
