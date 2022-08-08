@@ -15,6 +15,7 @@ body {
 
 .ql-editor {
   padding: 0 !important;
+  overflow-wrap: break-word;
 }
 
 .blink2 {
@@ -28,11 +29,12 @@ body {
 }
 
 p {
-  border-bottom: 0.2rem solid #b9d9eb;
   padding-bottom: 2px;
   padding-left: 13px !important;
   padding-right: 5px;
   margin-bottom: 5px;
+  max-width: 100vw;
+  overflow-wrap: break-word;
 }
 #arrow {
   position: absolute;
@@ -44,11 +46,10 @@ p {
 }
 
 #v-icon {
-  font-size: 10em;
   color: Green;
   text-shadow: -1px 14px rgb(62, 62, 62);
 
-  /* display: none; */
+  display: none;
 }
 
 @keyframes blink2 {

@@ -21,10 +21,9 @@ const clickEvent = () => {
     return;
   }
 
-  $('p').on('focusout', function (e) {
-    alert('Done key Pressed!!!!');
+  document.addEventListener('focusout', (e) => {
+    // alert('done');
   });
-
   btnContaienr.style.background = 'transparent';
   $(btnContaienr).addClass('blink');
   document
@@ -32,10 +31,12 @@ const clickEvent = () => {
     .removeEventListener('click', clickEvent);
 
   setTimeout(() => {
-    $(thanks).fadeOut(1000);
+    $(thanks).fadeOut(500, () => {
+      $(icon).fadeIn(500);
+    });
     $('.ql-editor p').fadeOut(1500);
     quill.disable();
-    $(icon).fadeIn(1000);
+
     $(btnContaienr).removeClass('blink');
   }, 5000);
 };
@@ -52,7 +53,7 @@ const thanks = document.getElementById('thanks');
 const btnContaienr = document.getElementById('button-container');
 const icon = document.getElementById('v-icon');
 let list = document.querySelectorAll('.child');
-$(icon).fadeOut(0);
+
 document
   .getElementById('button-container')
   .addEventListener('click', clickEvent);
