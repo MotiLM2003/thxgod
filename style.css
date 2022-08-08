@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(rgba(254, 255, 153, 1), rgba(254, 255, 153, 0.6));
+}
+
+.background {
+  background: linear-gradient(rgba(254, 255, 153, 1), rgba(254, 255, 153, 0.6));
+}
+
+.rtl {
+  text-align: right;
+  direction: rtl;
+}
+
+@keyframes blink2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #000;
+  }
+  100% {
+    background: #fff;
+  }
+}
