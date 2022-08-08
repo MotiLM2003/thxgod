@@ -8,7 +8,7 @@ $(document).ready(function () {
   }
   // $('.ql-editor p').text('a').focus();
 });
-s;
+
 const clickEvent = () => {
   let hasLetters = false;
 

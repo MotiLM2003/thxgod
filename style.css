@@ -47,7 +47,7 @@ p {
   color: Green;
   text-shadow: -1px 14px rgb(62, 62, 62);
 
-  display: none;
+  /* display: none; */
 }
 
 @keyframes blink2 {
