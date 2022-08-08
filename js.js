@@ -2,10 +2,7 @@ let quill = null;
 $(document).ready(function () {
   quill = new Quill('#editor', { placeholder: '' });
   quill.focus();
-  for (var i = 0; i < 100; i++) {
-    $('.ql-editor').append('<p></p>');
-    console.log(' here');
-  }
+
   // $('.ql-editor p').text('a').focus();
 });
 
