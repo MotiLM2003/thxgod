@@ -36,7 +36,7 @@ p {
 #arrow {
   position: absolute;
   font-size: 3rem;
-  top: 0.8rem;
+  top: 0rem;
   left: 3rem;
   color: crimson;
   opacity: 0;
