@@ -21,7 +21,7 @@ const clickEvent = () => {
     return;
   }
 
-  $('p').focusout(function (e) {
+  $('p').live('focusout', function (e) {
     alert('Done key Pressed!!!!');
   });
 
